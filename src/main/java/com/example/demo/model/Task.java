@@ -28,11 +28,10 @@ public class Task {
     @Enumerated(EnumType.STRING)
     private Priority priority;
 
-    // Construtor vazio (necessário para o JPA)
     public Task() {
     }
 
-    // Construtor com parâmetros
+
     public Task(String title, String description, LocalDate dueDate, Priority priority) {
         this.title = title;
         this.description = description;
@@ -40,7 +39,7 @@ public class Task {
         this.priority = priority;
     }
 
-    // Getters e Setters
+
     public Long getId() {
         return id;
     }
